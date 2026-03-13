@@ -32,7 +32,7 @@
                 <input id="input-search" type="text" placeholder="Search the issues" required />
               </label>
             </div>
-            <button id="btn-search" class="btn btn-primary join-item">
+            <button id="btn-search" type="submit"  class="btn btn-primary join-item">
               Search
             </button>
           </div>
@@ -78,8 +78,8 @@
 
       <div>
         <p class="">
-          <i class="fa-solid fa-circle" style="color: green"></i> Open
-          <span class="ml-9"><i class="fa-solid fa-circle" style="color: blueviolet"></i>
+          <i class="fa-solid fa-circle text-green-500"></i> Open
+          <span class="ml-9"><i class="fa-solid fa-circle text-purple-500"></i>
             Closed</span>
         </p>
       </div>
@@ -87,7 +87,9 @@
   </header>
 
   <main class="w-[90%] mx-auto">
-    <section id="" class="flex justify-center items-center pt-10 gap-4 hidden"><span class="loading loading-dots loading-md"></span>
+    <section id="spinner" class="flex justify-center items-center pt-10 gap-4 hidden">
+      
+      <span class="loading loading-dots loading-md"></span>
       <span class="loading loading-dots loading-xl"></span>
 
     </section>

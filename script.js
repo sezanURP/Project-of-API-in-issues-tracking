@@ -1,11 +1,26 @@
 // main page logic starts
 
+const manageSpinner=(status)=>{
+  if(status==true){
+    document.getElementById("spinner").classList.remove("hidden")
+    document.getElementById("issues_Container").classList.add("hidden")
+  }else{
+    document.getElementById("issues_Container").classList.remove("hidden")
+    document.getElementById("spinner").classList.add("hidden")
+
+  }
+}
+
 const loadIssues = () => {
+  manageSpinner(true)
+
   fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
     .then((response) => response.json())
     .then((data) => {
       displayIssues(data.data);
     });
+    //  manageSpinner(true)
+   
 };
 
 // loadIssues();
@@ -37,7 +52,7 @@ const displayIssues = (issues) => {
 
             <div class="bg-gray-50 px-5 py-3 text-gray-500 text-sm border-t mt-5">
               <p>#${issue.id} by ${issue.author}</p>
-              <p>1/15/2024</p>
+              <p>${issue.createdAt}</p>
             </div>
 
 
@@ -46,6 +61,7 @@ const displayIssues = (issues) => {
 
     issuesContainer.append(issueElement);
   });
+  manageSpinner(false)
 };
 
 loadIssues();
