@@ -92,6 +92,7 @@ const displayModal = (mIssue) => {
   // "createdAt": "2024-01-15T10:30:00Z",
   // "updatedAt": "2024-01-15T10:30:00Z"
 
+
   // modal issue show
 
   const modalBox = document.getElementById("modal-container");
@@ -165,6 +166,7 @@ const allIssues = () => {
     .then((response) => response.json())
     .then((data) => {
       allTab.push(...data.data);
+       issueCount.innerHTML = `<span class="text-2xl font-bold">${data.data.length} Issues</span>`;
     });
 };
 
@@ -261,23 +263,23 @@ document.getElementById("btn-search").addEventListener("click", () => {
      
       // const allIssueLcase=data.toLowerCase().
       displayIssues(searchWord.data)
-      // console.log(searchWord.data.length)
+       issueCount.innerHTML = `<span class="text-2xl font-bold">${searchWord.data.length} Issues</span>`;
     })
      
 
 })
 
-const searchBtn = document.getElementById("btn-search");
+// const searchBtn = document.getElementById("btn-search");
 
-      searchBtn.addEventListener("click", () => {
-        issueCount=""
-        issueCount.innerHTML =
-          `<span class="text-2xl font-bold">
-      ${displayIssues(searchWord.data.length)} Issues
-    </span>`;
-    displayIssues(searchWord.data)
+    //   searchBtn.addEventListener("click", () => {
+    //     issueCount=""
+    //     issueCount.innerHTML =
+    //       `<span class="text-2xl font-bold">
+    //   ${displayIssues(searchWord.data.length)} Issues
+    // </span>`;
+    // displayIssues(searchWord.data)
 
-      });
+    //   });
 
 
 // searchBtn.addEventListener("click", () => {
