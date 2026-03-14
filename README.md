@@ -43,10 +43,10 @@ It helps simplify tasks such as copying arrays, merging arrays, and cloning obje
 
 Such an example in array and object-
 
-const arr1 = [1, 2, 3];
+const arr1 = [1, 2, 3]; <br>
 const arr2 = [...arr1, 4, 5];
 
-console.log(arr2);
+console.log(arr2); <br>
 The output:
 [1, 2, 3, 4, 5]
 
