@@ -1,19 +1,19 @@
-1️⃣ What is the difference between var, let, and const?
+## 1️⃣ What is the difference between var, let, and const?
 Answer: Difference between var, let, and const in below:
 
 In JavaScript, var, let, and const are used to declare variables. However, they differ in terms of scope, redeclaration, and reassignment.
 
-1. var
+#### 1.var
 
 Scope: Function-scoped
 
 Redeclaration: Allowed
 
-Reassignment: Allowed
+Reassignment: Allowed 
 
 Variables declared with var are accessible throughout the entire function in which they are defined.
 
-2. let
+#### 2.let
 
 Scope: Block-scoped
 
@@ -23,7 +23,7 @@ Reassignment: Allowed
 
 let is commonly used when the value of a variable may change.
 
-3. const
+#### 3.const
 
 Scope: Block-scoped
 
@@ -35,7 +35,7 @@ const is used when the variable value should remain constant.
 
 
 
-2️⃣ What is the spread operator (...)?
+## 2️⃣ What is the spread operator (...)?
 
 Answer: The spread operator (...) is used to expand elements of an array or properties of an object into another array or object.
 
@@ -68,14 +68,14 @@ newUser= {
 
 
 
-3️⃣ What is the difference between map(), filter(), and forEach()?
+## 3️⃣ What is the difference between map(), filter(), and forEach()?
 Answer:In below described the difference between map(), filter(), and forEach():
 
 
 There are array methods used to process elements of an array.
 
 
-1. map()
+#### 1. map()
 
 Used to transform each element of an array.
 Returns a new array with modified values.
@@ -87,7 +87,7 @@ const result = numbers.map(n => n * 2);
 Output:[2, 4, 6]
 
 
-2. filter()
+#### 2. filter()
 
 It's used to select elements based on a condition.
 Returns a new array containing only the elements that satisfy the condition.
@@ -99,7 +99,7 @@ Output is [3, 4]
 
 
 
-3. forEach()
+ #### 3. forEach()
 
 forEach() is used to iterate through an array.
 Does not return a new array.
@@ -114,7 +114,7 @@ numbers.forEach(n => {
 Its show the individual index of array in number or element 
 
 
-4️⃣ What is an arrow function?
+## 4️⃣ What is an arrow function?
 Answer: Arrow Function
 
 An arrow function is a shorter syntax for writing functions in JavaScript. It update function in traditional functions introduced in ES6 (ECMAScript 2015).
@@ -126,14 +126,14 @@ function add(a, b) {
 }
 
 arrow function 
-const add = (a, b) => a + b;
-const square = n => n * n;
+const add = `(a, b) => a + b;
+const square = n => n * n`;
 
 console.log(square(5));
 output:25
 
 
-5️⃣ What are template literals?
+## 5️⃣ What are template literals?
 Answer:Template Literals:
 
 Template literals are a feature in JavaScript used to create dynamic strings. They are written using backticks ( ) instead of single or double quotes.
